@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
                     // code to run when user clicks that item
 
                     int i = index;
-                    String myDrawableName = myvegarray[i];
+                    String myDrawableName = myvegarray[i].replaceAll(" ","_");
                     int resID = getResources().getIdentifier(myDrawableName , "drawable", getPackageName());
                     imageView.setImageResource(resID);
-
+/*
                     switch (myDrawableName) {
 
 
@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                     }
+
+ */
 
 
                 }
